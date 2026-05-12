@@ -1,0 +1,20 @@
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main() {
+	int value;
+	int r_digit;
+	printf("정수를 5개 연속해서 입력하세요. \n");
+	scanf("%d", &value);
+	printf("\n 출력 결과는 >>>");
+
+	do {
+		r_digit = value % 10;
+		printf("%d", r_digit);
+		value = value / 10;
+
+	} while (value);
+	printf("\n");
+
+	return 0;
+}
